@@ -1,0 +1,133 @@
+html {
+  background: url("img/background.jpg") center 0/cover;
+  height: 700px;
+  margin: auto;
+  width: 1200px;
+}
+body {
+  font-family: 'Asap', sans-serif;
+}
+
+.container {
+  background-color: #000;
+  margin: 0;
+  width: auto;
+  /* position: relative; */
+}
+.header {
+  border-bottom: 4px solid rgb(219,0,0);
+  color: rgb(219,0,0);
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+  padding: 0;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.buttons p {
+  width: 25%;
+}
+.btn {
+  transition: all 1s ease;
+}
+.btn:hover {
+  background-color: rgb(219,0,0);
+}
+
+.scoreBoard {
+border: 3px solid rgb(219,0,0);
+border-radius: 5px;
+color: rgb(219,0,0);
+font-size: 40px;
+left: 620px;
+padding: 15px;
+position: absolute;
+text-align: center;
+width: 200px;
+z-index: -2;
+}
+.playerScoreTag, .computerScoreTag {
+  background-color: rgb(219,0,0);
+  color: rgb(40,40,40);
+  font-size: 13px;
+  padding: 5px;
+}
+.playerScoreTag {
+  left: -30px;
+  position: absolute;
+  top: 30px;
+}
+.computerScoreTag {
+  position: absolute;
+  right: -40px;
+  top: 30px;
+}
+
+#newGame {
+  left: 620px;
+  position: absolute;
+  top: 350px;
+  width: 200px;
+}
+
+#newGame:hover {
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.roundsBoard {
+  color: rgb(219,0,0);
+  left: 620px;
+  position: absolute;
+  text-align: center;
+  top: 410px;
+  width: 200px;
+}
+
+#roundsNumber {
+  font-size: 25px;
+  text-align: center;
+}
+
+#output {
+  border: 3px solid rgb(219,0,0);
+  border-radius: 5px;
+  bottom: 170px;
+  color: rgb(219,0,0);
+  font-size: 30px;
+  left: 470px;
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  width: 500px;
+  z-index: -2;
+}
+
+.popup > div {
+	background: #fff;
+  border-radius: 10px;
+  box-shadow: 4px 4px 15px 1px rgba(0,0,0,0.75);
+  display: none;
+  left: 50%;
+  overflow: auto;
+  padding: 15px;
+  position: fixed;
+  text-align: center;
+	top: 52%;
+	transform: translate3d(-50%, -50%, 0);
+  width: 300px;
+  height: 200px;
+}
+.popup > div > table {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+.popup > div > ul {
+  list-style-type: none;
+}
+.popup .show {
+  display: block;
+}

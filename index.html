@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Asap:400,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Let's play a game</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Let's play a game</h1>
+    </div>
+    <div class="buttons">
+      <p>
+        <button type="button" class="btn btn-default btn-lg btn-block rock player-move" id="rock" data-move="rock">Rock</button>
+      </p>
+      <p>
+        <button type="button" class="btn btn-default btn-lg btn-block paper player-move" id="paper" data-move="paper">Paper</button>
+      </p>
+      <p>
+        <button type="button" class="btn btn-default btn-lg btn-block scissors player-move" id="scissors" data-move="scissors">Scissors</button>
+      </p>
+    </div>
+    <div class="scoreBoard">
+      <div class="playerScoreTag">PLAYER</div>
+      <div class="computerScoreTag">COMPUTER</div>
+      <span class="playerScoreCounter">0 </span>:<span class="computerScoreCounter"> 0</span>
+    </div>
+    <div class="round">
+
+    </div>
+    <div>
+      <button type="button" class="btn btn-default btn-lg btn-block" id="newGame">New Game</button>
+    </div>
+    <div class="roundsBoard">
+      <div class="titleRounds">Number of rounds:</div>
+      <div id="roundsNumber"></div>
+    </div>
+    <div id="output">
+      <p></p>
+    </div>
+  </div>
+  <div class="popup" id="popup">
+    <div>
+      <table>
+        <tr>
+          <td>Player Score:</td>
+          <td class="jsScorePlayer">0</td>
+        </tr>
+        <tr>
+          <td>Computer Score:</td>
+          <td class="jsScoreComputer">0</td>
+        </tr>
+      </table>
+      <ul class="jsRoundsList"></ul>
+    </div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+
+</html>
